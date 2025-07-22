@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vault of Codes - Internship & Certificate Validation</title>
+  <link rel="stylesheet" href="system.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <section class="hero">
+      <h1>Vault of Codes Hub</h1>
+      <p>Apply for our internship or verify your certificate in one place.</p>
+      <div class="nav-links">
+        <a href="https://abhaydg.github.io/intership-page/">Internship</a>
+        <a href="http://127.0.0.1:5500/protflio%20enhancement/intership/ui.html">Certificate Validation</a>
+      </div>
+    </section>
+
+    <section id="internship" class="section">
+      <h2>Internship Program</h2>
+      <div class="benefits">
+        <div class="benefit-card">
+          <h3>Practical Experience</h3>
+          <p>Work on real-world projects with cutting-edge tech.</p>
+        </div>
+        <div class="benefit-card">
+          <h3>Mentorship</h3>
+          <p>Get guidance from industry professionals.</p>
+        </div>
+        <div class="benefit-card">
+          <h3>Portfolio Building</h3>
+          <p>Create projects to showcase your skills.</p>
+        </div>
+      </div>
+
+      <div class="form-container">
+        <h2>Apply Now</h2>
+        <form>
+          <input type="text" placeholder="Full Name" required>
+          <input type="email" placeholder="Email Address" required>
+          <textarea placeholder="Tell us about yourself" rows="4" required></textarea>
+          <button type="submit" class="cta-button">Submit Application</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="validation" class="section">
+      <h2>Certificate Validation</h2>
+      <form id="validation-form" class="form-container">
+        <input type="text" id="certificate-id" placeholder="Enter Certificate ID" required>
+        <button type="submit" class="cta-button">Verify Certificate</button>
+      </form>
+    </section>
+  </div>
+
+  <div class="modal" id="result-modal">
+    <div class="modal-content">
+      <h2>Validation Result</h2>
+      <p id="result-text"></p>
+      <button onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
+  <script src="system.js"></script>
+</body>
+</html>
